@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layanan Surat &amp; Kontak — Desa Karangrejo</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  #surat-feedback{
+    display:none;margin-top:24px;background:var(--paper);border:1px solid var(--gold-500);
+    border-radius:var(--radius-m);padding:18px 22px;font-size:.9rem;color:var(--green-900);
+  }
+  #surat-feedback.show{display:block;}
+  .aduan-form{display:grid;gap:14px;margin-top:18px;}
+  .aduan-form input,.aduan-form textarea{
+    width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.25);
+    background:rgba(255,255,255,.08);color:#fff;font-family:var(--font-body);font-size:.9rem;
+  }
+  .aduan-form textarea{min-height:90px;resize:vertical;}
+  .aduan-form input::placeholder,.aduan-form textarea::placeholder{color:rgba(255,255,255,.5);}
+  .aduan-form input:focus,.aduan-form textarea:focus{outline:2px solid var(--gold-500);}
+</style>
+</head>
+<body data-page="layanan">
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand"><span class="brand-mark">D</span> Desa Karangrejo</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="home">Home</a></li>
+      <li><a href="profil.html" data-page="profil">Profil</a></li>
+      <li><a href="potensi.html" data-page="potensi">Potensi</a></li>
+      <li><a href="fasilitas.html" data-page="fasilitas">Fasilitas</a></li>
+      <li><a href="layanan.html" data-page="layanan">Layanan Surat</a></li>
+      <li><a href="#kontak" data-page="kontak">Kontak</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <h1>Layanan Surat Menyurat Online</h1>
+    <p>Ajukan permohonan surat administrasi desa dengan mudah, cepat, dan tanpa antre.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:34px;">
+      <span class="eyebrow-line">PELAYANAN DIGITAL</span>
+      <h2>Layanan Surat Menyurat Online</h2>
+      <p>Ajukan permohonan surat administrasi desa dari mana saja, kapan saja.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div>
+          <h3>Surat Keterangan Tidak Mampu</h3>
+          <p>Digunakan untuk pengajuan bantuan sosial dan keringanan biaya.</p>
+          <button class="btn btn-gold btn-small" data-surat-btn="Surat Keterangan Tidak Mampu">Buat Surat →</button>
+        </div>
+        <div class="service-icon">📄</div>
+      </div>
+      <div class="service-card light">
+        <div>
+          <h3>Surat Keterangan Usaha</h3>
+          <p>Syarat pengajuan modal usaha dan izin UMKM.</p>
+          <button class="btn btn-gold btn-small" data-surat-btn="Surat Keterangan Usaha">Buat Surat →</button>
+        </div>
+        <div class="service-icon">🧾</div>
+      </div>
+      <div class="service-card">
+        <div>
+          <h3>Surat Keterangan Domisili</h3>
+          <p>Bukti tempat tinggal resmi warga terdaftar di Desa Karangrejo.</p>
+          <button class="btn btn-gold btn-small" data-surat-btn="Surat Keterangan Domisili">Buat Surat →</button>
+        </div>
+        <div class="service-icon">🏠</div>
+      </div>
+      <div class="service-card light">
+        <div>
+          <h3>Surat Kehilangan</h3>
+          <p>Laporan resmi untuk kehilangan dokumen atau barang pribadi.</p>
+          <button class="btn btn-gold btn-small" data-surat-btn="Surat Kehilangan">Buat Surat →</button>
+        </div>
+        <div class="service-icon">🔍</div>
+      </div>
+    </div>
+    <div id="surat-feedback"></div>
+  </div>
+</section>
+
+<section style="background:var(--cream-2);" id="kontak">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow-line">HUBUNGI KAMI</span>
+      <h2>Sosial Media &amp; Layanan Pengaduan</h2>
+      <p>Terhubung langsung dengan perangkat desa untuk kritik, saran, atau informasi terbaru.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card office">
+        <h4>Kantor Kepala Desa</h4>
+        <div class="contact-line">📍 <span>Jl. Raya Poros Karangrejo No. 12, Kecamatan Argamulya, Jawa Tengah</span></div>
+        <div class="contact-line">📞 <span>+62 (0274) 555-1234 (Jam kerja 08.00 - 15.00)</span></div>
+        <div class="contact-line">✉️ <span>desakarangrejo@gmail.com</span></div>
+      </div>
+      <div class="contact-card social">
+        <h4>Saluran Informasi Resmi</h4>
+        <p style="color:rgba(255,255,255,.75);font-size:.87rem;">Terus ikuti update kegiatan desa, informasi terkini, dan pengumuman melalui kanal sosial media kami.</p>
+        <div class="social-icons">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">▶️</a>
+          <a href="https://wa.me/6282155512345" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+        </div>
+
+        <form class="aduan-form" id="aduan-form" style="margin-top:24px;">
+          <input type="text" name="nama" placeholder="Nama lengkap">
+          <textarea name="isi" placeholder="Tulis pengaduan atau saran Anda..."></textarea>
+          <button type="submit" class="btn btn-outline btn-small" style="justify-self:start;">Kirim Pengaduan →</button>
+          <div id="aduan-status" style="font-size:.85rem;"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="color:#fff;margin-bottom:14px;"><span class="brand-mark">D</span> Desa Karangrejo</div>
+        <p>Portal resmi desa untuk akses informasi, layanan publik, dan potensi lokal khas Desa Karangrejo, Jawa Tengah.</p>
+      </div>
+      <div>
+        <h4>Navigasi Cepat</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil Desa</a></li>
+          <li><a href="potensi.html">Potensi</a></li>
+          <li><a href="fasilitas.html">Fasilitas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>KKN-T UNESA 2026</h4>
+        <p>Situs ini dikembangkan sebagai bentuk kontribusi mahasiswa KKN Tematik Universitas Negeri Surabaya, Membangun Negeri Dari Desa.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Desa Karangrejo. Seluruh hak dilindungi.</span>
+      <span>Made with 💛 Tim KKN Purworejo</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
